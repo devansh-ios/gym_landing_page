@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fit'N'Healthy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- -----------------------  navbar -------------------------------------- -->
+    <nav class="navBar">
+      <div class="brand-title">Fit'N'Healthy</div>
+      <a href="#" class="toggle-button">
+        <span class="bars"></span>
+        <span class="bars"></span>
+        <span class="bars"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="img">
+      <div class="text">
+        <span>
+          BODY DON'T BUILD BY <br />
+          <i style="text-decoration: underline; text-decoration-color: black;"
+            >SITTING HOME
+          </i>
+        </span>
+      </div>
+    </div>
+
+    <!-- --------------------------- HOME -------------------------------------- -->
+
+    <section id="about">
+      <div class="img1">
+        <div class="text1">
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+            debitis maiores del Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem, accusamus! ectus laborum iusto
+          </span>
+        </div>
+      </div>
+      <div class="img2">
+        <div class="text2">
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+            debitis maiores del Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem, accusamus! ectus laborum iusto
+          </span>
+        </div>
+      </div>
+      <div class="img3">
+        <div class="text3">
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+            debitis maiores del Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Exercitationem, accusamus! ectus laborum iusto
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------------------------ABOUT------------------------->
+
+    <section id="pricing">
+      <h1>PRICING</h1>
+      <div class="pricingContainer">
+        <div class="cards">
+          <h4>lorem</h4>
+          <ul>
+            <li>ectus laborum iusto d</li>
+            <li>ectus laborum iusto d</li>
+            <li>ectus laborum iusto d</li>
+          </ul>
+        </div>
+        <div class="cards">
+          <h4>lorem</h4>
+          <ul>
+            <li>ectus laborum iusto d</li>
+            <li>ectus laborum iusto d</li>
+            <li>ectus laborum iusto d</li>
+            <li>ectus laborum iusto d</li>
+          </ul>
+        </div>
+        <div class="cards">
+          <h4>lorem</h4>
+          <ul>
+            <li>ectus laborum iusto d</li>
+            <li>ectus laborum iusto d</li>
+            <li>ectus laborum iusto d</li>
+            <li>ectus laborum iusto d</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------ Contact ---------------------------------------------------------->
+    <video
+      autoplay
+      muted
+      loop
+      id="myVideo"
+      src="./video/stock-footage-blurred-view-woman-fighter-trains-his-punches-beats-a-punching-bag-training-day-in-the-boxing.webm"
+      frameborder="0"
+    ></video>
+
+    <section id="contact">
+      <h1>CONTACT</h1>
+      <div class="form">
+        <form action="./submit.html">
+          <input id="name" type="text" placeholder=" enter  name " /><br />
+          <input type="email" placeholder=" enter  email " /><br />
+          <input type="password" placeholder=" enter  password  " /><br />
+          <div class="radioDiv">
+            <p style="text-decoration: underline;">CHOOSE EXCERCISE</p>
+
+            <input type="radio" id="cardio" name="excerice" value=" CARDIO" />
+            <label for="cardio">CARDIO</label><br />
+
+            <input
+              type="radio"
+              id="aerobics"
+              name="excerice"
+              value="AEROBICS"
+            />
+            <label for="aerobics">AEROBICS</label><br />
+
+            <input
+              type="radio"
+              id="strength"
+              name="excerice"
+              value="STRENGTH"
+            />
+            <label for="strength"> STRENGTH</label><br />
+          </div>
+          <input type="submit" onclick="myFunction()" />
+        </form>
+
+        <h4 style="margin-top: 3rem;">
+          MADE BY ❤❤
+          <a href="https://www.linkedin.com/in/devansh-kumar-9798b21ba/"
+            >Devansh</a
+          >
+        </h4>
+      </div>
+    </section>
+
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+      const output = document.getElementById("output");
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

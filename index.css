@@ -1,0 +1,325 @@
+/* #FEB139 for background */
+/* #FF0063 for text heading  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+.brand-title {
+  font-size: 3em;
+  margin: 1rem auto 1rem 4rem;
+}
+.navbar-links {
+  width: 25%;
+  margin: 1rem 9rem auto auto;
+}
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-align: left;
+}
+.navbar-links li:hover {
+  background: #555;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+.toggle-button .bars {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .brand-title {
+    font-size: 1.5em;
+    margin-left: 1rem;
+  }
+  .toggle-button {
+    display: flex;
+    margin: 0.5rem;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+.img {
+  display: flex;
+  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url("images/muscles-2525200.jpg");
+  opacity: 0.8;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.text {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 50%;
+  text-align: left;
+  font-size: 3.5em;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+/* -------------------------------------- about css start from here ---------------------------------- */
+
+.img1,
+.img2,
+.img3 {
+  background-image: url("images/inner-space-1026464_1280.jpg");
+  min-height: 80vh;
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.text1,
+.text3 {
+  padding: 5rem;
+  position: absolute;
+  left: 50%;
+  letter-spacing: 5px;
+  font-size: 2em;
+  color: white;
+  text-align: left;
+  height: 80vh;
+  background: #666;
+}
+.img2 {
+  background-image: url("images/gym-5000169_1920.jpg");
+  background-position: right;
+  width: 100%;
+}
+.img3 {
+  background-image: url("images/weight-lifting-1284616_1920.jpg");
+  min-height: 100vh;
+}
+.text3 {
+  height: 100vh;
+}
+.text2 {
+  padding: 5rem;
+  position: absolute;
+  right: 50%;
+  letter-spacing: 5px;
+  font-size: 2em;
+  color: white;
+  text-align: left;
+  height: 80vh;
+  background: #666;
+}
+/* /////////////////////////////////////////////////////about css start from here ////////////////// */
+
+#pricing {
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+}
+#pricing h1 {
+  font-size: 4em;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.pricingContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pricingContainer .cards {
+  background-color: #666;
+  color: white;
+  padding: 3rem;
+  font-weight: bold;
+}
+.cards ul li {
+  padding-bottom: 0.3rem;
+}
+.cards h4 {
+  font-size: 2em;
+  margin: auto auto 4rem auto;
+}
+.cards:hover {
+  margin-top: -20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  background: #333;
+}
+/* ////////////////////////// contact page start from here /////////////////////// */
+
+#contact {
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+}
+#contact h1 {
+  margin-top: 7rem;
+  font-size: 4em;
+  text-align: center;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  height: 40px;
+  width: 40%;
+  padding: 20px;
+  margin: auto auto 2rem auto;
+}
+input[type="submit"] {
+  height: 30px;
+  width: 20%;
+}
+input[type="radio"] {
+  height: 20%;
+  margin: 1rem auto 1rem auto;
+  font-size: 1em;
+}
+#myVideo {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  right: 0;
+  left: 0;
+  opacity: 0.7;
+}
+form {
+  margin-top: 6rem;
+}
+.output {
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+
+  line-height: 2;
+}
+/* ////////////////// media query //////////////////0 */
+@media (max-width: 900px) {
+  /* started from footer to navbar  */
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    height: 25px;
+    padding: 1rem;
+    color: red;
+  }
+  #contact {
+    height: 100%;
+    margin-top: 20rem;
+  }
+  #contact p {
+    font-size: 1em;
+  }
+  #myVideo {
+    margin-top: 20rem;
+    width: 100%;
+  }
+  .form {
+    margin-top: 7rem;
+  }
+
+  .pricingContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .pricingContainer .cards {
+    margin: auto;
+  }
+  .img1,
+  .img2,
+  .img3 {
+    min-height: 90vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .text1,
+  .text2,
+  .text3 {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    padding: 5rem;
+    top: 50%;
+    left: 0;
+    font-size: 1em;
+  }
+  .text3 {
+    height: 50%;
+  }
+  .img {
+    background-size: cover;
+  }
+  .text {
+    font-size: 2.5em;
+  }
+  .output {
+    font-size: 1em;
+  }
+  .radioDiv {
+    display: none;
+  }
+}
